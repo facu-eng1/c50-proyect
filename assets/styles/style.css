@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+nav {
+    display: flex;
+    justify-content: space-between ;
+    background-color: black;
+    border-radius: 0px 0px 20px 20px;
+}
+.logo {
+    width: 280px;
+    height: 200px;
+    margin: 10px 0px 1px 30px;
+}
+.lista {
+    display: flex;
+    margin-right: 25px;
+    margin-top: 90px;
+}
+.lista li{
+    margin-right: 20px;
+    list-style: none;
+}
+.lista li a{
+    text-decoration: none;
+    cursor: pointer;
+    color:blueviolet;
+}
+.lista li a:hover{
+    color: burlywood;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+.articulos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px
+}
+.art-img {
+    width: 140px;
+    height: 100px;
+    margin: 20px 20px 20px 30px;
+}
+.articulo {
+    text-align: center;
+    margin-right: 20px;
+    width: 200px;
+    height: 225px;
+    background-color:rgb(116, 48, 179);
+    border-radius: 20px;
+    box-shadow: 6px 11px 2px -3px rgba(0, 0, 0, 0.9);
+}
+.btn-art {
+    margin-top: 15px;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 110px;
+    height: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-art:hover{
+    color: brown;
+}
+.promo {
+    display: flex;
+    margin-top: 60px;
+    height: 350px;
+    background-color: blueviolet;
+    box-shadow: 6px 11px 5px -3 rgba(0, 0, 0, 0.9);
+}
+.promo img {
+    width: 30%;
+    height: 100%;
+}
+.promo p {
+    margin-top: 5%;
+    margin-left: 50px;
+    width: 60%;
+}
+footer{
+    display: flex;
+    justify-content: space-between ;
+    background-color: bisque;
+}
+.pie {
+    margin: 10px 0px 12px 0px ;
+    text-align: center;
+    display: flex;
+    margin-right: 15px;
+}
+.pie li{
+    margin-right: 40px;
+    list-style: none;
+}
+.pie li a{
+    text-decoration: none;
+    cursor: pointer;
+    color:blueviolet;
+}
+.pie li a:hover{
+    color: burlywood;
+}
+footer h4{
+    margin: 10px 0px 12px 10px;
+    text-align: center;
+    font-weight: 400;
+}
+footer a {
+    text-decoration: none;
+    color: blueviolet;
+}
