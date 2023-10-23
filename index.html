@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,129 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Zapas Style</title>
 </head>
+
 <body>
-    <nav>
+
+
+
+
+
+    <!-- nav hamburguesa -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" width="280 px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="lista">
+                    <li class="nav-item">
+                        <a href="/"><i>Inicio</i></a><!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="./assets/pages/marcas.html" target="_blank"><i>Marcas</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./assets/pages/favs.html" target="_blank"><i>Favoritos</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./assets/pages/carrito.html" target="_blank"><i>Carrito</i></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- carrousel -->
+    <div id="carouselExampleCaptions" class="carousel slide mt-8" >
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 0"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/img/Air Jordan 5 Retro GTX.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carousel-caption d-none d-md-block">First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/Air Jordan Retro 4.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/Air-Jordan-4-Retro-Fire-Red-zapatillas.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/retro-gris-blanca.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/bluesuede1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <nav>
         <img class="logo" src="./assets/img/logo.png" alt="logo-zapa">
         <ul class="lista">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="./assets/pages/marcas.html" target="_blank">Marcas</a></li>
-            <li><a href="./assets/pages/favs.html" target="_blank">Favoritos</a></li>
-            <li><a href="./assets/pages/carrito.html" target="_blank">Carrito</a></li>
+            <li><a href="/"><i>Inicio</i></a></li>
+            <li><a href="./assets/pages/marcas.html" target="_blank"><i>Marcas</i></a></li>
+            <li><a href="./assets/pages/favs.html" target="_blank"><i>Favoritos</i></a></li>
+            <li><a href="./assets/pages/carrito.html" target="_blank"><i>Carrito</i></a></li>
         </ul>
-    </nav>
+    </nav> -->
     <div class="container">
         <div class="articulos">
             <div class="articulo">
@@ -68,21 +180,29 @@
     <section class="promo">
         <img src="./assets/img/logo.png" alt="imagen-promo">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, error! Ipsum neque cupiditate asperiores saepe adipisci dignissimos porro modi aliquam. Nemo sed exercitationem quos libero? Dolor voluptas fugiat voluptatibus maiores.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, error! Ipsum neque cupiditate asperiores
+            saepe adipisci dignissimos porro modi aliquam. Nemo sed exercitationem quos libero? Dolor voluptas fugiat
+            voluptatibus maiores.
             <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis id dolore consequatur distinctio necessitatibus nesciunt temporibus pariatur cumque, optio magnam aliquam tempora molestiae. Dolorem expedita libero modi sunt consequuntur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis id dolore consequatur distinctio
+            necessitatibus nesciunt temporibus pariatur cumque, optio magnam aliquam tempora molestiae. Dolorem expedita
+            libero modi sunt consequuntur.
             <br>
         </p>
     </section>
     <footer>
         <h4>
             Copyright &copy;
-            <a href="#">Proyecto.</a> Todos los derechos reservados  
+            <a href="#">Proyecto.</a> Todos los derechos reservados
         </h4>
         <ul class="pie">
-            <li><a href="./assets/pages/contacto.html" target="_blank">Contacto</a></li>
-            <li><a href="./assets/pages/nosotros.html" target="_blank">Nosotros</a></li>
+            <li><a href="./assets/pages/contacto.html" target="_blank"><i>Contacto</i></a></li>
+            <li><a href="./assets/pages/nosotros.html" target="_blank"><i>Nosotros</i></a></li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
